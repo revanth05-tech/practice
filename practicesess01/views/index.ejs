@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini ConvoManage</title>
+</head>
+<body>
+    <h1>Mini ConvoManage</h1>
+
+    <form action="/add-conference" method="POST">
+        <input type="text" name="name" placeholder="Conference Name" required>
+        <button type="submit">Add Conference</button>
+    </form>
+
+    <div id="conferenceAlert"></div>
+
+    <% if(success){ %>
+        <script src="/script.js"></script>
+        <script>
+            showAlert("<%= success %>");
+        </script>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "company":"Infosys",
+        "role" : "Software Engineer",
+        "package" : 6.5,
+        "eligible_branches" : ["CSE","IT"]
+    },
+    {
+        "id":2,
+        "company":"TCS",
+        "role":"System Engineer",
+        "package" : 4.0,
+        "eligible_branches":["CSE","IT"]
+    },
+    {
+        "id":3,
+        "company":"Amazon",
+        "role":"SDE",
+        "package":25.0,
+        "eligible_branches":["CSE"]
+    }
+]
