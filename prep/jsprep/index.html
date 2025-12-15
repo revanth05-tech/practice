@@ -7,13 +7,28 @@
 </head>
 <body>
     <h2 id="title">Home</h2>
-    <button onclick="changeText()">Click Me</button>
-    
+    <button id="btn">Click Me</button>
 
-    <script>
-        function changeText(){
-            document.getElementById("title").innerText = "Hara Hara Mahadev";
+  <script>
+    let btn = document.getElementById("btn");
+    let text = document.getElementById("title");
+
+    let isClicked = false;
+
+    btn.addEventListener("click", function () {
+
+        if (isClicked === false) {
+            text.style.display = "none";
+            btn.innerText = "Show";
+            isClicked = true;
+        } else {
+            text.style.display = "block";
+            btn.innerText = "Hide";
+            isClicked = false;
         }
-    </script>
+
+    });
+</script>
+
 </body>
 </html>
