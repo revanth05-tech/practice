@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sfv</title>
+</head>
+<body>
+
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Enter Your name!!">
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        let form = document.getElementById("myForm");
+        let input = document.getElementById("username");
+        let message = document.getElementById("message");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (input.value === "") {
+                message.innerText = "Name is required";
+                message.style.color = "red";
+            } else {
+                message.innerText = "Form submitted successfully!!";
+                message.style.color = "green";
+            }
+        });
+    </script>
+
+</body>
+</html>
