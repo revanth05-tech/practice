@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live input preview</title>
+</head>
+<body>
+    <input type="text" placeholder="Type Something....!!" id="inputbox">
+    <output id="outputbox"></output>
+
+    
+    <script>
+        let inputBox = document.getElementById("inputbox");
+        let outputBox = document.getElementById("outputbox");
+
+        inputBox.addEventListener("input",function(){
+            outputBox.innerText = "You Typed: " + event.target.value;
+        });
+    </script>
+</body>
+</html>

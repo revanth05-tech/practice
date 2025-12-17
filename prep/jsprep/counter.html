@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-
     <h2 id="count">0</h2>
 
     <button id="inc">+</button>
     <button id="dec">-</button>
+
+
 
     <script>
         let countText = document.getElementById("count");
@@ -19,18 +20,19 @@
 
         let count = 0;
 
-        incBtn.addEventListener("click", function () {
+        incBtn.addEventListener("click",function(){
             count++;
             countText.innerText = count;
         });
 
-        decBtn.addEventListener("click", function () {
-            if (count > 0) {
+        decBtn.addEventListener("click",function(){
+            if (count > 0){
                 count--;
                 countText.innerText = count;
             }
         });
-    </script>
 
+    </script>
+    
 </body>
 </html>
