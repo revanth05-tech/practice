@@ -1,14 +1,16 @@
-let str = "HelloWorld";
-let vowels = "aeiouAEIOU";
-let count = 0;
+const prompt = require("prompt-sync")();
+let str = prompt("Enter the Word : ");
 
-for(let i = 0;i<str.length;i++){
+let count = 0;
+let vowels = "aeiouAEIOU";
+
+for(let i = 0; i <str.length;i++){
     for(let j = 0;j<vowels.length;j++){
-        if(str[i] === vowels[j]){
+        if(str[i] == vowels[j]){
             count++;
             break;
         }
     }
 }
 
-console.log(`Number of Vowels in the string: ${count}`)
+console.log(`Vowels in the Given Word : ${count}`);
