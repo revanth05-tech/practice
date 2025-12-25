@@ -2,11 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.use(express.json());
 
-app.get('/home',(req,res)=>{
-    res.send("Welcome to the Home Page");
-})
-
-app.listen(port,()=>{
+app.listen(port,() =>{
     console.log(`Server is running on http://localhost:${port}`);
 });
